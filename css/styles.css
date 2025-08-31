@@ -68,7 +68,7 @@ body {
     top: 50%;
     right: 5%;
     transform: translateY(-50%);
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -85,7 +85,7 @@ body {
   padding: 20px;
   width: 20%;        
   max-width: 320px;   
-  min-width: 380px;    
+  min-width: 410px;    
 }
 .carousel-item {
   position: relative; /* para que la caja se posicione respecto a la imagen */
@@ -113,7 +113,64 @@ body {
   max-width: 280px;  /* límite en grandes */
   min-width: 180px;  /* límite en móviles */
 }
+/* fin carrusel principal */
+
+
+/*---estilos para las tarjetas---*/
+/* Efecto hover en la tarjeta */
+.card.especial {
+  transition: all 0.3s ease-in-out;
+}
+
+.card.especial:hover {
+  background-color: #4d9170; /* verde */
+  color: white; /* texto blanco */
+  transform: translateY(-5px); /* efecto flotante */
+  cursor: pointer;
+}
+
+/* Imagen normal */
+.card.especial img {
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Imagen al hacer hover en la tarjeta */
+.card.especial:hover img {
+  filter: brightness(0) invert(1); 
+}
+/* fin tarjetas */
+
+
 
 .titulos {
     color: #449278;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.titulos2 {
+    color: #449278;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.informacion {
+    color: #000000;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-img-top-3 {
+  height: 500px;       /* altura */
+  object-fit: cover;   /* recorta y ajusta la imagen para que no se deforme */
 }
