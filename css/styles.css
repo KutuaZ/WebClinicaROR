@@ -8,6 +8,7 @@
   background: linear-gradient(90deg, #dae9ff, #d7e6dabd);
 }
 
+
 /*---barra navegacion item---*/
 .nav-item .nav-link{
     margin-left: 20px;
@@ -17,8 +18,8 @@
     color: #000000;
 }
 
-.container my-5{
-    background-color: #000000;
+body {
+  padding-top: 80px; /* ajusta según la altura de barra */
 }
 
 .navbar .nav-link:hover {
@@ -47,6 +48,12 @@
   background-color: #000000;  
 }
 
+/*mover flechas al costado*/
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* más pequeño */
+}
+
 .info-box {
   background: rgba(0, 0, 0, 0.5); /* fondo negro transparente */
   padding: 20px;
@@ -65,52 +72,48 @@
   }
 }
 
+
 .info-box-2 {
   position: absolute;
-  top: 50%;          /* centrado vertical */
-  right: 0;          /* pegado al lado derecho */
-  transform: translateY(-20%);
-  width: 45%;        /* ocupa un cuarto del ancho */
-  background: rgba(30, 146, 47, 0.747); /* fondo con transparencia */
-  border-radius: 20% 0 0 20%; /* borde circular en U hacia la izquierda */
+  top: 50%;                  
+  right: 0;                  
+  transform: translateY(-50%);
+  background: rgba(30, 146, 47, 0.8);
+  border-radius: 50px 0 0 50px; /* curva */
   text-align: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(3, 3, 3, 0.89);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  padding: 20px;
+  width: 20%;        
+  max-width: 320px;   
+  min-width: 380px;    
 }
-
-
 .carousel-item {
   position: relative; /* para que la caja se posicione respecto a la imagen */
 }
 
-.info-box-2 {
-  position: absolute;
-  top: 50%;                 
-  right: 0;                  /* lado derecho */
-  transform: translateY(-50%); /* centrado perfecto */
-  max-width: 300px;          /* límite fijo para que NO se estire */
-  width: 100%;               /* adaptable pero con límite */
-  padding: 20px;
-  background: rgba(30, 146, 47, 0.747); 
-  border-radius: 20% 0 0 20%;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(3, 3, 3, 0.89);
-}
+
 /*-- Caja circular en la tercera imagen del carrusel --*/
 
 .circle-box {
   position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 25%;       
-  aspect-ratio: 1 / 1; 
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  aspect-ratio: 1 / 1;  
   border-radius: 50%;
-  background: rgba(0, 123, 255, 0.7);
+  background: rgba(0, 123, 255, 0.75);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  width: 18vw;       /* relativo al ancho de la ventana */
+  max-width: 280px;  /* límite en grandes */
+  min-width: 180px;  /* límite en móviles */
+}
+
+.titulos {
+    color: #449278;
 }

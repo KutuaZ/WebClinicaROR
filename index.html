@@ -10,83 +10,178 @@
 </head>
 <body>
   <!-- barra de navegacion-->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container">
-      <img src="/assets/icon/clinic.png" alt="logo clinica" class="logo">
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <div class="container">
+    <img src="/assets/icon/clinic.png" alt="logo clinica" class="logo" id="logo">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Reserva hora</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Especialidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesion</a></li>  
-        </ul>
-      </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Reserva hora</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Especialidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesion</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
   <!-- fin barra de navegacion-->
 
 
   <!-- - carrusel de imagenes--> 
-  <main class="container my-5">
-    <div class="box shadow p-4 mb-4 bg-body rounded">
-      <div id="carouselExampleIndicators" class="carousel slide imagenes dinamicas" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/assets/image/clinicafuera1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block info-box">
-              <h5>Bienvenido a la Clínica</h5>
-              <p>Atención de calidad para toda la familia</p>
-              <a href="#reserva" class="btn btn-warning">Reserva tu hora</a>
-            </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <!-- Botones indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- imagen 1 -->
+        <div class="carousel-item active">
+          <img src="/assets/image/clinicafuera1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block info-box">
+            <h5>Bienvenido a la Clínica</h5>
+            <p>Atención de calidad para toda la familia</p>
+            <a href="#reserva" class="btn btn-warning">Reserva tu hora</a>
           </div>
-          <div class="carousel-item">
-            <div class="row position-relative">
-              <div class="col-md-12">
-            <img src="/assets/image/clinicadentro1.png" class="d-block w-100" alt="...">
         </div>
-        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center"> 
-          <div class= "info-box-2 text-center">
-          <h2>Nuestras Especialidades</h2>
-          <p>Contamos con los mejores profesionales en distintas áreas médicas.</p>
-          <a href="#especialidades" class="btn btn-warning">Ver más</a>
+
+        <!-- imagen 2 -->
+        <div class="carousel-item">
+          <img src="/assets/image/clinicadentro1.png" class="d-block w-100" alt="...">
+          <div class="info-box-2 text-center">
+            <h2>Nuestras Especialidades</h2>
+            <p>Contamos con los mejores profesionales en distintas áreas médicas.</p>
+            <a href="#especialidades" class="btn btn-warning">Ver más</a>
+          </div>
+        </div>
+
+        <!-- imagen 3 -->
+        <div class="carousel-item position-relative">
+          <img src="/assets/image/clinicatencion1.png" class="d-block w-100" alt="...">
+          <div class="circle-box text-center">
+            <h5>Atención Personalizada</h5>
+            <p>Tu salud es nuestra prioridad</p>
+            <a href="#contacto" class="btn btn-warning">Contáctanos</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botones de navegación -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- - fin carrusel de imagenes-->
+
+  <!-- Texto debajo -->
+
+  <div class="box shadow p-4 mb-4 bg-body rounded">
+  <div class="text-center mb-4">
+    <h1 class="fw-bold titulos">Bienvenidos a ROR-Med Clinic</h1>
+    <p class="lead">Tu salud es nuestra prioridad. En ROR-Med Clinic, ofrecemos atención médica de calidad con un equipo de profesionales dedicados a tu bienestar.</p>
+  </div>
+
+
+  <!-- ocho cartas -->
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-3 mb-3">
+      <div class="card h-100">
+        <a link href="index.html">
+        <img src="/assets/icon/logo-exam.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="carta-titulo">Reserva hora para examenes y laboratorio</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100">
+        <a link href="index.html">
+        <img src="/assets/icon/logo-med-online.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="carta-titulo">Agenda tu consulta médica en línea</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100">
+        <a link href="index.html">
+        <img src="/assets/icon/logo-arancel.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="carta-titulo">Aranceles</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100">
+        <a link href="index.html">
+        <img src="/assets/icon/logo-seguro.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="carta-titulo">Convenios y seguros</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100">
+        <a link href="index.html">
+        <img src="/assets/icon/logo-pago.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="carta-titulo">Pago de cuentas</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100">
+        <a link href="index.html">
+        <img src="/assets/icon/logo-farmacia.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="carta-titulo">Farmacia en línea</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100">
+        <a link href="index.html">
+        <img src="/assets/icon/logo-atencion.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="carta-titulo">Soporte y atención al cliente</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100">
+        <a link href="index.html">
+        <img src="/assets/icon/logo-preguntas.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="carta-titulo">Preguntas frecuentes</h5>
         </div>
       </div>
     </div>
   </div>
-          <div class="carousel-item position-relative">
-            <img src="/assets/image/clinicatencion1.png" class="d-block w-100" alt="...">
-            <div class="circle-box text-center">
-              <h5>Atención Personalizada</h5>
-              <p>Tu salud es nuestra prioridad</p>
-              <a href="#contacto" class="btn btn-warning">Contáctanos</a>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <div class="text-center mb-4">
-      <h1 class="fw-bold">Bienvenidos a ROR-Med Clinic</h1>
-      <p class="lead">Tu salud es nuestra prioridad. En ROR-Med Clinic, ofrecemos atención médica de calidad con un equipo de profesionales dedicados a tu bienestar.</p>
-  </main>
-  <!-- - fin carrusel de imagenes-->
+</div>
+
+  <!-- fin ocho cartas -->
+
+
+
 
 
 
