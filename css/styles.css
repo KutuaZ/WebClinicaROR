@@ -495,3 +495,65 @@ body {
     }
 }
 
+
+
+/*telemedicina*/
+
+.telemedicina-section .bg-white {
+    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);#f1f1f1;
+    border-radius: 12px;
+    padding: 2rem;
+    color: rgb(5, 5, 5);
+    transition: all 0.3s ease;
+}
+
+/* Campos del formulario */
+#telemedForm .form-control,
+#telemedForm .form-select {
+    border-radius: 12px;
+    border: 2px solid #302929;
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #ffffff !important;
+    color: #333;
+}
+
+/* Focus */
+#telemedForm .form-control:focus,
+#telemedForm .form-select:focus {
+    border-color: #ecd501;
+    box-shadow: 0 0 8px rgba(250, 222, 139, 0.3);
+}
+
+/* Botón */
+#telemedForm button[type="submit"] {
+    border-radius: 12px;
+    background-color: #4d9170;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#telemedForm button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Contador de palabras */
+#telemedWordCount {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Mensajes de error */
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+    border-color: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .telemedicina-section .bg-white {
+        padding: 1.5rem;
+    }
+}

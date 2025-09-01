@@ -34,3 +34,40 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+/*formulario validacion telemedicina*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("telemedForm");
+    const messageInput = document.getElementById("telemed-message");
+    const wordCount = document.getElementById("telemedWordCount");
+    const maxWords = 50;
+
+    // Función para contar palabras
+    function countWords(text) {
+        if (!text.trim()) return 0;
+        return text.trim().split(/\s+/).length;
+    }
+
+    // Actualiza contador de palabras mientras se escribe
+    messageInput.addEventListener("input", function() {
+        let words = countWords(this.value);
+        if (words > maxWords) {
+            // Limita a 50 palabras
+            let trimmed = this.value.split(/\s+/).slice(0, maxWords).join(" ");
+            this.value = trimmed;
+            words = maxWords;
+        }
+        wordCount.textContent = `${words} / ${maxWords} palabras`;
+    });
+
+    // Validación al enviar
+    form.addEventListener("submit", function(e) {
+        if (!form.checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        form.classList.add("was-validated");
+    }, false);
+});
