@@ -371,7 +371,7 @@ body {
 
 /* Título principal */
 .contact-form-section h2 {
-    color: #369669;
+    color: #3a9e6f;
 }
 
 /* Formulario */
@@ -396,7 +396,7 @@ body {
     font-size: 1rem;
     box-shadow: none;
     margin-bottom: 15px;
-    background-color: #e3f5eb; 
+    background-color: #ffffff; 
     color: #333; 
     font-weight: 500;
 
@@ -447,7 +447,7 @@ body {
 
 /* Tarjeta de reserva */
 .reserva-card {
-    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);#f1f1f1;
+    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -500,7 +500,7 @@ body {
 /*telemedicina*/
 
 .telemedicina-section .bg-white {
-    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);#f1f1f1;
+    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);
     border-radius: 12px;
     padding: 2rem;
     color: rgb(5, 5, 5);
@@ -555,5 +555,46 @@ body {
 @media (max-width: 576px) {
     .telemedicina-section .bg-white {
         padding: 1.5rem;
+    }
+}
+
+
+/* Formulario Aranceles */
+#arancelForm {
+    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#arancelForm .form-control {
+    border-radius: 12px;
+    border: 2px solid #302929;
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+#arancelForm .form-control:focus {
+    border-color: #ecd501;
+    box-shadow: 0 0 8px rgba(250, 222, 139, 0.3);
+}
+
+#arancelForm button[type="submit"] {
+    border-radius: 12px;
+    background-color: #4d9170;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#arancelForm button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    #arancelForm {
+        padding: 20px;
     }
 }

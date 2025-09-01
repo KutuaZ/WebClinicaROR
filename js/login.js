@@ -71,3 +71,24 @@ document.addEventListener("DOMContentLoaded", function() {
         form.classList.add("was-validated");
     }, false);
 });
+// fin formulario telemedicina
+
+
+
+
+// validacion aranceles 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("arancelForm");
+
+    form.addEventListener("submit", function(e) {
+        if (!form.checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+        } else {
+            alert("Solicitud enviada. Se enviará el presupuesto a tu correo.");
+            e.preventDefault(); 
+        }
+        form.classList.add("was-validated");
+    }, false);
+});
