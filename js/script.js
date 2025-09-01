@@ -148,3 +148,41 @@ botones.forEach(boton => {
         }
     });
 });
+
+
+/* Validación del formulario contacto */
+(() => {
+    'use strict';
+
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(event) {
+    event.preventDefault(); // evitar envío por defecto
+    event.stopPropagation();
+
+    // Validación de campos requeridos
+    let isValid = form.checkValidity();
+
+    // Validación del mensaje: máximo 50 palabras
+    const message = document.getElementById('contact-message').value.trim();
+    const wordCount = message.split(/\s+/).filter(word => word.length > 0).length;
+    if (wordCount > 50) {
+        isValid = false;
+        document.getElementById('contact-message').classList.add('is-invalid');
+        document.getElementById('contact-message').nextElementSibling.textContent = 
+        `El mensaje excede el límite de 50 palabras (${wordCount} actuales).`;
+    } else {
+        document.getElementById('contact-message').classList.remove('is-invalid');
+    }
+
+    form.classList.add('was-validated');
+
+    if (isValid) {
+        alert('Formulario enviado correctamente');
+        form.reset();
+        form.classList.remove('was-validated');
+        }
+    });
+})();
+
+    
