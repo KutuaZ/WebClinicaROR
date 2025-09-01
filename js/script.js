@@ -1,3 +1,5 @@
+
+/* Validación del formulario html reserva */
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("reservaForm");
 
@@ -118,6 +120,31 @@ document.addEventListener("DOMContentLoaded", function() {
             input.addEventListener("change", () => limpiarError(id));
         } else {
             input.addEventListener("input", () => limpiarError(id));
+        }
+    });
+});
+
+
+/* Acordeón en especialidades */
+document.querySelectorAll('.acordeon-boton').forEach(boton => {
+    boton.addEventListener('click', () => {
+    const item = boton.parentElement;
+    item.classList.toggle('activo');
+    });
+});
+
+/* flechas cambio acordeon */
+const botones = document.querySelectorAll(".acordeon-boton");
+
+botones.forEach(boton => {
+    boton.addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    const contenido = this.nextElementSibling;
+    if (contenido.style.maxHeight) {
+        contenido.style.maxHeight = null;
+    } else {
+        contenido.style.maxHeight = contenido.scrollHeight + "px";
         }
     });
 });

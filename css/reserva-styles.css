@@ -1,6 +1,6 @@
 /* LOGO Y NAVBAR */
 .reserva-logo { 
-    height: 80px; 
+    height: 100px; 
     width: auto; 
 }
 
@@ -20,7 +20,7 @@
 }
 
 body { 
-    padding-top: 100px; /* ajusta según la altura de barra */
+    padding-top: 120px; /* ajusta según la altura de barra */
 }
 
 /* FORMULARIO RESERVA */
