@@ -46,7 +46,7 @@ body {
 }
 
 .reserva-input:focus, .reserva-select:focus {
-    border-color: #4d9170;
+    border-color: #4d8d6e;
     box-shadow: 0 0 5px rgba(77,145,112,0.5);
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .reserva-btn {
-    background-color: #4d9170;
+    background-color: #70c49b;
     border: none;
     padding: 12px 30px;
     font-size: 1.1rem;

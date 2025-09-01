@@ -268,54 +268,7 @@ body {
     padding-top: 100px; /* ajusta según la altura de barra */
 }
 
-/* FORMULARIO RESERVA */
-.reserva-form-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px;
-    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
 
-.reserva-titulo { 
-    color: #449278;
-    font-weight: bold;
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.reserva-input, .reserva-select {
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.reserva-input:focus, .reserva-select:focus {
-    border-color: #4d9170;
-    box-shadow: 0 0 5px rgba(77,145,112,0.5);
-}
-
-.is-invalid { 
-    border-color: #dc3545 !important; 
-}
-
-.reserva-text-danger { 
-    font-size: 0.85em; 
-    margin-top: 5px; 
-}
-
-.reserva-btn {
-    background-color: #4d9170;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.reserva-btn:hover { 
-    background-color: #367c5a; 
-}
 
 /* ESTILO RESPONSIVO */
 @media (max-width: 768px) {
@@ -364,8 +317,8 @@ body {
     object-fit: contain; 
     object-position: center; 
     border-radius: 15px; /* bordes */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra sutil */
-    transition: transform 0.3s ease; /* transición suave */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra */
+    transition: transform 0.3s ease; /* transición */
     margin-bottom: 20px; 
     display: block;
     margin:auto;
@@ -412,7 +365,7 @@ body {
 /* FORMULARIO CONTACTO */
 /* Estilo general de la sección */
 .contact-form-section {
-    background-color: #ad3e3e; /* Gris claro */
+    background-color: #ad3e3e; 
     padding: 60px 0;
 }
 
@@ -443,8 +396,8 @@ body {
     font-size: 1rem;
     box-shadow: none;
     margin-bottom: 15px;
-    background-color: #e3f5eb; /* Fondo blanco */
-    color: #333; /* Texto oscuro */
+    background-color: #e3f5eb; 
+    color: #333; 
     font-weight: 500;
 
 }
@@ -452,7 +405,7 @@ body {
 /* Efecto hover y focus en los campos */
 #contactForm .form-control:focus,
 #contactForm .form-select:focus {
-    border-color: #ecd501; /* Amarillo */
+    border-color: #ecd501; 
     box-shadow: 0 0 8px rgba(250, 222, 139, 0.3);
 }
 
@@ -460,7 +413,7 @@ body {
 #contactForm button[type="submit"] {
     border-radius: 12px;
     transition: all 0.3s ease;
-    background-color: #76b898; /* Verde */
+    background-color: #76b898; 
     color: white;
 }
 
@@ -472,7 +425,7 @@ body {
 /* Contador de palabras */
 #wordCount {
     font-size: 0.9rem;
-    color: #6c757d; /* Gris oscuro */
+    color: #6c757d; 
 }
 
 /* Mensajes de error */
@@ -491,4 +444,54 @@ body {
 
 
 
+
+/* Tarjeta de reserva */
+.reserva-card {
+    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);#f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reserva-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(102, 23, 23, 0.15);
+}
+
+/* Campos del formulario */
+#reservaForm .form-control,
+#reservaForm .form-select {
+    border-radius: 12px;
+    border: 2px solid #2b2828;
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Focus */
+#reservaForm .form-control:focus,
+#reservaForm .form-select:focus {
+    border-color: #f0df2a;
+    box-shadow: 0 0 8px rgba(236, 240, 16, 0.3);
+}
+
+/* Botón */
+#reservaForm button[type="submit"] {
+    border-radius: 12px;
+    background-color: #4d9170;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#reservaForm button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .reserva-card {
+        padding: 20px;
+    }
+}
 

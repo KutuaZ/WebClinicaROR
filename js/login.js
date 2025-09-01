@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (valid) {
             alert("Formulario válido\n");
-            // form.submit(); // descomenta si quieres enviar el formulario
         }
     });
 });
