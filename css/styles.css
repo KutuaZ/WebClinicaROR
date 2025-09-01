@@ -404,3 +404,87 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+
+
+
+
+/* FORMULARIO CONTACTO */
+/* Estilo general de la sección */
+.contact-form-section {
+    background-color: #ad3e3e; /* Gris claro */
+    padding: 60px 0;
+}
+
+/* Título principal */
+.contact-form-section h2 {
+    color: #369669;
+}
+
+/* Formulario */
+#contactForm {
+    background: linear-gradient(90deg, #dae9ff, #d7e6dabd);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 600px;
+    margin: auto;
+
+}
+
+/* Campos del formulario */
+#contactForm .form-control,
+#contactForm .form-select {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 2px solid #302929;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: none;
+    margin-bottom: 15px;
+    background-color: #e3f5eb; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+    font-weight: 500;
+
+}
+
+/* Efecto hover y focus en los campos */
+#contactForm .form-control:focus,
+#contactForm .form-select:focus {
+    border-color: #ecd501; /* Amarillo */
+    box-shadow: 0 0 8px rgba(250, 222, 139, 0.3);
+}
+
+/* Botón de envío */
+#contactForm button[type="submit"] {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: #76b898; /* Verde */
+    color: white;
+}
+
+#contactForm button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Contador de palabras */
+#wordCount {
+    font-size: 0.9rem;
+    color: #6c757d; /* Gris oscuro */
+}
+
+/* Mensajes de error */
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+    border-color: #dc3545;
+}
+
+/* Para móviles: ajuste de padding */
+@media (max-width: 576px) {
+    #contactForm {
+        padding: 20px;
+    }
+}
+/* fin formulario contacto */
