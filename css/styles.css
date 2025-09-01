@@ -324,3 +324,83 @@ body {
         margin: 20px auto;
     }
 }
+
+
+
+/* Nosotros */
+.titulos3 {
+    color: #449278;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.titulos4 {
+    color: #449278;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textoC {
+    color: #000000;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Carrusel instalaciones */
+.carousel-instalaciones {
+    width: 100%;
+    height: 650px;       
+    object-fit: contain; 
+    object-position: center; 
+    border-radius: 15px; /* bordes */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra sutil */
+    transition: transform 0.3s ease; /* transición suave */
+    margin-bottom: 20px; 
+    display: block;
+    margin:auto;
+}
+
+/* ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-instalaciones {
+    max-height: 400px; 
+  }
+}
+
+/* Estilo para las tarjetas de información */
+.custom-card {
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(197, 194, 194, 0.1);
+  
+  background-color: #f8f9fa; 
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
+.custom-card:hover {
+  background-color: #4d9170; 
+  color: white;
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
