@@ -745,3 +745,104 @@ body {
 }
 
 /* Fin pago cuentas */
+
+
+
+/* soporte -- estilos para Sedes y Soporte */
+.soporte-section { background: #f7faf6; }
+
+.soporte-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+.soporte-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(31, 64, 55, 0.08);
+}
+
+.soporte-media {
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+  width: 100%;
+}
+
+.soporte-body h5 { color: #2a6b4a; font-weight: 700; }
+.soporte-body p { color: #5a635f; }
+
+.soporte-body .btn-outline-success { border-radius: 10px; }
+.soporte-body .btn-success { border-radius: 10px; }
+
+@media (max-width: 767px) {
+  .soporte-media { height: 140px; }
+}
+/*fin soporte*/
+
+
+
+
+/*preguntas frecuentes*/
+
+/* FAQ estilo ROR-MED Clinic */
+.faq-card {
+  background: linear-gradient(90deg, #dae9ff, #d7e6dabd);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card input { display: none; }
+
+.faq-question {
+  display: block;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px;
+  color: #2f5a8f;
+  margin-bottom: 0;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+  color: #2f5a8f;
+}
+
+.faq-card input:checked + .faq-question::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  transition: max-height 0.3s ease, padding-top 0.3s ease;
+}
+
+.faq-card input:checked ~ .faq-answer {
+  max-height: 150px;
+  padding-top: 15px;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const wordCount = document.getElementById("telemedWordCount");
     const maxWords = 50;
 
-    // Función para contar palabras
+    //  contar palabras
     function countWords(text) {
         if (!text.trim()) return 0;
         return text.trim().split(/\s+/).length;
